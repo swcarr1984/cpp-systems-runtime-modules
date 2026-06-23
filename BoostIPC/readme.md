@@ -11,13 +11,14 @@ The setup provides:
 - reproducible CMake build system
 - dependency management using vcpkg
 - useful for windows or linux systems programming and base testing
+                      BOOST MSG QUEUE (send, read, respond)
+- process_a (prod) --> a_to_b queue --> process_b (cons)
+- process_a (cons) <-- b_to_a queue <-- process_b (prod)
+- 
+- process_a sends data (req) --> process_b (read) and can then respond
+- process_a reads (read/resp) <-- process_b sends back data (resp)
 
-  +----------------+        Boost Message Queue        +----------------+
-|   process_a    |  --->   "a_to_b_queue"   --->     |   process_b    |
-| (producer)     |  <---   "b_to_a_queue"   <---     | (consumer)     |
-+----------------+                                    +----------------+
-
-Very simple skeleton: 
+Simple skeleton: 
 process_a sends commands and receives responses
 process_b receives commands and sends responses
 Communication uses Boost.Interprocess message queues
