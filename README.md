@@ -6,7 +6,7 @@ Currently populated with:
 - Signal acquisition modules
 - Buffers
 
-- To be added:
+To be added:
 - Boost.Interprocess Shared Memory template project
 - Further multi-stage IIR & FIR filters.
 - Development on acquisition modules.
