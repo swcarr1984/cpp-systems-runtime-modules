@@ -14,16 +14,14 @@ This library provides:
 - Lightweight logging  
 - Circular buffer template for acquisition pipelines  
 
-
 ## Usage
 
-### CMake
-
 ```cmake
+### **CMake** 
 find_package(systems_utils REQUIRED)
 target_link_libraries(my_app PRIVATE systems_utils::systems_utils)
 
-Example usage:
+### **Example usage:**
 
 #include <systems_utils.hpp>
 
@@ -38,30 +36,30 @@ int main() {
     return 0;
 }
 
-Features
-Register Operations
+### **Features**
+**Register Operations**
 Set, clear, toggle, and check individual bits.
 
-Mask Helpers
+**Mask Helpers**
 Write and read multi‑bit fields safely.
 
-Endianness Tools
+**Endian swap tools**
 swap16 / swap32 / swap64 for cross‑platform data handling.
 
-Timing Utilities
+**Timing Utilities**
 Microsecond‑resolution timers for profiling and acquisition loops.
 
-Logging
+**Logging**
 Zero‑dependency logging for embedded or runtime systems.
 
-Circular Buffer
+**Circular Buffer**
 Fast, fixed‑size FIFO for acquisition or streaming
 
 MIT License
 
 ---
 
-# **4. General Folder Structure**
+### ** General Folder Structure**
 
 cpp-systems-runtime-modules/
 │
