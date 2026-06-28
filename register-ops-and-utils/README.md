@@ -14,16 +14,6 @@ This library provides:
 - Lightweight logging  
 - Circular buffer template for acquisition pipelines  
 
----
-
-## Folder Structure
-include/
-systems_utils.hpp
-CMakeLists.txt
-README.md
-
-
----
 
 ## Usage
 
