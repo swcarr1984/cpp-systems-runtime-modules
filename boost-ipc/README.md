@@ -29,8 +29,10 @@ Benefits of Boost:
 - fixed‑size messages suitable for real‑time systems
 - no OS‑specific Win32 API calls
 - predictable memory usage
-
+  
+```
 Structure:
+
 - WindowsProcessIPCpipes/
 │   CMakeLists.txt
 │   process_a.cpp
@@ -40,3 +42,5 @@ Structure:
     └── Debug/
         ├── process_a.exe
         └── process_b.exe
+```
+  
